@@ -1,34 +1,75 @@
-name = input("What is your name? :")
-while name != "John":
-   print("Invalid name please try again")
-   name = input("What is your name? :")
-print("Please enter your password below:")
-password = input("What is your password? :")
-while password != "125437":
-   print("Invalid password please try again")
-   password = input("What is your password? :")
-print("Please verify your age below by taking a picture")
-verification = input("Please take a picture below if you have done it please write done :")
-while verification != "done":
-   print("Invalid verification please try again")
-   verification = input("Please take a picture below if you have done it please write done :")
-print("Alright you will find out down below if you have made it in or not")
-grade = 60
-if grade >= 95:
+print("Hello Please enter your name and password below to continue")
+name = input("Name :")
+while name != "Maxine":
+   print("Invalid name Please re-enter your name")
+   name = input("Name :")
+print("Please enter your password below")
+password = input("Password :")
+while password != "Maxine_rocks":
+   print("Invalid Password Please re-enter your password below")
+   password = input("Password :")
+print("Welcome back Maxine! You have successfully logged in")
+print("Here are your grades for all 3 semesters")
+grade_semester1 = 70
+if grade_semester1 >= 95:
    print("A+")
-elif grade >= 90:
+elif grade_semester1 >= 90:
    print("A")
-elif grade >= 80:
+elif grade_semester1 >= 85:
+   print("A-")
+elif grade_semester1 >= 80:
+   print("B+")
+elif grade_semester1 >= 75:
    print("B")
-elif grade >= 70:
+elif grade_semester1 >= 70:
+   print("B-")
+elif grade_semester1 >= 65:
    print("C")
-elif grade >= 60:
+elif grade_semester1 >= 60:
    print("D")
 else:
    print("F")
-fail = 60
-did_not_make_it = False
-if fail and did_not_make_it == False:
-   print("Unfortunatly you did not make it in")
+grade_semester2 = 89
+if grade_semester2 >= 95:
+   print("A+")
+elif grade_semester2 >= 90:
+   print("A")
+elif grade_semester2 >= 85:
+   print("A-")
+elif grade_semester2 >= 80:
+   print("B+")
+elif grade_semester2 >= 75:
+   print("B")
+elif grade_semester2 >= 70:
+   print("B-")
+elif grade_semester2 >= 65:
+   print("C")
+elif grade_semester2 >= 60:
+   print("D")
 else:
-   print("Congratulations you made it in")
+   print("F")
+grade_semester3 = 98
+if grade_semester3 >= 95:
+   print("A+")
+elif grade_semester3 >= 90:
+   print("A")
+elif grade_semester3 >= 85:
+   print("A-")
+elif grade_semester3 >= 80:
+   print("B+")
+elif grade_semester3 >= 75:
+   print("B")
+elif grade_semester3 >= 70:
+   print("B-")
+elif grade_semester3 >= 65:
+   print("C")
+elif grade_semester3 >= 60:
+   print("D")
+else:
+   print("F")
+grade_good = True
+passed = True
+if grade_good and passed == True:
+   print("You have passed with good grades")
+else:
+   print("You have Failed")
