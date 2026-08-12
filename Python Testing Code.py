@@ -30,5 +30,5 @@ if option1 == "delete":
      print("Here are your updated tasks for today :")
 for i in range(len(tasks)):
         print(i + 1, tasks[i])
-         
+        
     
