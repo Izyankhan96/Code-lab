@@ -35,3 +35,5 @@ if options_choice == "Delete":
     
 if options_choice == "None":
     print("No changes made to your tasks.")
+    for i in range(len(tasks)):
+        print(i +1, tasks[i])
