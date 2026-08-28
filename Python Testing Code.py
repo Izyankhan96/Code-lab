@@ -19,7 +19,7 @@ print("if you would like to add or change a task please select from the followin
 options = ["Add","Delete","None","Update"]
 for i in range(len(options)):
     print(i + 1, options[i])
-options_choice = input("Please select an option: ")
+options_choice = input("Please select an option : ")
 if options_choice == "Add":
     new_task = input("Please enter the new task you would like to add :")
     tasks.append(new_task)
@@ -27,12 +27,15 @@ if options_choice == "Add":
     for i in range(len(tasks)):
         print(i + 1, tasks[i])
 if options_choice == "Delete":
-    delete_task = input("Please enter the task number you would like to delete :")
+    delete_task = input("Please enter the task you would like to delete :")
+    while delete_task not in tasks:
+        print("That task is not in your list, please try again.")
+        delete_task = input("Please enter the task you would like to delete :")
     tasks.remove(delete_task)
     print("Your updated tasks for today are :")
     for i in range(len(tasks)):
-            print(i + 1, tasks[i])
-    
+        print(i + 1, tasks[i])
+
 if options_choice == "None":
     print("No changes made to your tasks.")
     for i in range(len(tasks)):
