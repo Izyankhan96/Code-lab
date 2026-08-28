@@ -19,7 +19,7 @@ print("if you would like to add or change a task please select from the followin
 options = ["Add","Delete","None","Update"]
 for i in range(len(options)):
     print(i + 1, options[i])
-options_choice = input("Please select an option : ")
+options_choice = input("Please select an option: ")
 if options_choice == "Add":
     new_task = input("Please enter the new task you would like to add :")
     tasks.append(new_task)
